@@ -118,3 +118,11 @@ so you can easily combine them to wrap that information in any desirable format.
 If you want to redefine the interpretation, e.g. produce numeric values
 for display in a widget rather than plain english descriptions, you may want to use the TAF object directly.
 All its methods return dicts with pretty straightforward key names.
+
+
+Other languages support:
+
+English (default)
+
+Italian
+Added a Decoder_it class that inherit from Decoder, overridden methos for fluid and correct Italian message output.
