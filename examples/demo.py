@@ -19,10 +19,17 @@ t = pytaf.TAF(taf_str)
 # Create a decoder object from the TAF object
 d = pytaf.Decoder(t)
 
+# Create a decoder object from the TAF object, using Decoder_it for italian output
+
+it = pytaf.Decoder_it(t)
+
 # Print the raw string for the reference
 print(taf_str)
 
 # Decode and print the decoded string
-dec = d.decode_taf()
-print(dec)
 
+dec = d.decode_taf()
+print("default eng decoding: ", dec)
+
+dec_it = it.decode_taf()
+print("custom it decoding: ", dec_it)
